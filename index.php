@@ -44,11 +44,11 @@ require __DIR__ . '/Database/db.php';
                 <?php foreach ($products as $product) : ?>
                     <div class="col-3">
                         <!-- card -->
-                        <div class="card">
+                        <div class="card border-0">
                             <!-- card header -->
                             <div class="card-header bg-light">
                                 <!-- product image -->
-                                <img src="<?= $product->image ?>" alt="" class="img-fluid rounded-2 py-2">
+                                <img src="<?= $product->image ?>" alt="" class="img-fluid rounded py-2">
                                 <!-- product name and category -->
                                 <div class="py-3">
                                     <a href="#" class="text-black link-underline-info">
