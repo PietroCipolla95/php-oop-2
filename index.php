@@ -33,13 +33,25 @@ require __DIR__ . '/Database/db.php';
 
     <?php include './Layout/header.php' ?>
 
-    <main>
+    <main class="pt-5">
 
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <?php foreach ($products as $product) : ?>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="<?= $product->image ?>" alt="" class="img-fluid">
+                                <h3>
+                                    <?= $product->name ?>
+                                </h3>
+                            </div>
+                            <div class="card-body">
 
-                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach ?>
             </div>
         </div>
 
