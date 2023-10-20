@@ -1,9 +1,18 @@
 <?php
 
+$debug = true;
+if ($debug == true) {
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+}
+
+
 require __DIR__ . '/Models/products.php';
 require __DIR__ . '/Models/food.php';
 require __DIR__ . '/Models/kennel.php';
 require __DIR__ . '/Models/toy.php';
+
+require __DIR__ . '/Database/db.php';
 
 ?>
 
@@ -21,6 +30,19 @@ require __DIR__ . '/Models/toy.php';
 </head>
 
 <body>
+
+    <header>
+        <nav class="navbar navbar-expand navbar-light bg-secondary">
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
 
 

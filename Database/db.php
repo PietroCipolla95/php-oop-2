@@ -8,4 +8,6 @@ $croccantini = new Food('Croccantini', 'https://picsum.photos/seed/picsum/200/30
 
 $cuccia = new Kennel('Cuccia small', 'https://picsum.photos/seed/picsum/200/300', 40, 'cuccia', 'gatto', 'small');
 
-$whiskas = new Food('Pranzetti', 'https://picsum.photos/seed/picsum/200/300', 20, 'food', 'gatto', 10 + 'x' + 80);
+$whiskas = new Food('Pranzetti', 'https://picsum.photos/seed/picsum/200/300', 20, 'food', 'gatto', 10 . 'x' . 80);
+
+array_push($products, $bone, $croccantini, $cuccia, $whiskas);
