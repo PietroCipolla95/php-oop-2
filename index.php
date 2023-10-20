@@ -27,6 +27,9 @@ require __DIR__ . '/Database/db.php';
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -40,19 +43,26 @@ require __DIR__ . '/Database/db.php';
                 <?php foreach ($products as $product) : ?>
                     <div class="col-3">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header bg-light">
                                 <img src="<?= $product->image ?>" alt="" class="img-fluid rounded-2">
-                                <h3 class="py-2">
-                                    <?= $product->name ?>
-                                </h3>
+                                <div class="py-3">
+                                    <h4>
+                                        <?= $product->name ?>
+                                    </h4>
+                                    <p class="text-end m-0 text-decoration-underline">
+                                        <?= $product->category ?>
+                                    </p>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <h5 class="text-success">
-                                    <?= $product->price ?>€
-                                </h5>
-                                <p>
-                                    <?= $product->getInfos() ?>
-                                </p>
+                            <div class="card-body bg-dark">
+                                <div id="infos_left">
+                                    <h6 class="text-success">
+                                        <?= $product->price ?>€
+                                    </h6>
+                                    <h6 class="text-light">
+                                        <?= $product->getInfos() ?>
+                                    </h6>
+                                </div>
                             </div>
                         </div>
                     </div>
