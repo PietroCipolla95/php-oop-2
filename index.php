@@ -41,13 +41,18 @@ require __DIR__ . '/Database/db.php';
                     <div class="col-3">
                         <div class="card">
                             <div class="card-header">
-                                <img src="<?= $product->image ?>" alt="" class="img-fluid">
-                                <h3>
+                                <img src="<?= $product->image ?>" alt="" class="img-fluid rounded-2">
+                                <h3 class="py-2">
                                     <?= $product->name ?>
                                 </h3>
                             </div>
                             <div class="card-body">
-
+                                <h5 class="text-success">
+                                    <?= $product->price ?>€
+                                </h5>
+                                <p>
+                                    <?= $product->getInfos() ?>
+                                </p>
                             </div>
                         </div>
                     </div>

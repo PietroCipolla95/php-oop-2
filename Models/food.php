@@ -18,8 +18,8 @@ class Food extends Product
     }
 
 
-    public function getInfos($weight)
+    public function getInfos()
     {
-        $this->weight = $weight . 'g';
+        return 'Peso:' . $this->weight . 'g';
     }
 }
