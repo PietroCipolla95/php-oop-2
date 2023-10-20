@@ -16,6 +16,6 @@ $croccantini_2 = new Food('Croccantini 2', 'https://www.petsplanet.it/713-large_
 
 $cuccia_grande = new Kennel('Cuccia grande', 'https://www.original-legno.it/public/foto-NORMALE/000101-1.jpg', 100, 'Kennel', new AnimalCategory('cani'), 'Big');
 
-$tiragraffi = new Food('Tiragraffi', 'https://www.ibs.it/images/0602561144836_0_0_536_0_75.jpg', 120, 'Toy', new AnimalCategory('gatti'), 'Sisal');
+$tiragraffi = new Toy('Tiragraffi', 'https://www.ibs.it/images/0602561144836_0_0_536_0_75.jpg', 120, 'Toy', new AnimalCategory('gatti'), 'Sisal');
 
 array_push($products, $bone, $croccantini, $cuccia, $pranzetti, $bone_2, $croccantini_2, $cuccia_grande, $tiragraffi);
