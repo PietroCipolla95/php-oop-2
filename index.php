@@ -33,6 +33,20 @@ require __DIR__ . '/Database/db.php';
 
     <?php include './Layout/header.php' ?>
 
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
 
 
 

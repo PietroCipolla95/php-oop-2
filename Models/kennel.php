@@ -16,7 +16,7 @@ class Kennel extends Product
         $this->dimension = $dimension;
     }
 
-    public function getDimension($dimension)
+    public function getInfos($dimension)
     {
         $this->dimension = $dimension;
     }
