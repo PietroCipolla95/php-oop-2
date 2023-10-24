@@ -13,7 +13,7 @@ class AnimalCategory
 
         if ($this->animal_category === 'cani') {
             return '<i class="fa-solid fa-dog fa-flip-horizontal fa-2xl"></i>';
-        } else {
+        } else if ($this->animal_category === 'gatti') {
             return '<i class="fa-solid fa-cat fa-flip-horizontal fa-2xl"></i>';
         }
     }

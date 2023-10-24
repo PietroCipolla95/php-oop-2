@@ -13,7 +13,7 @@
                             <div class="py-3">
                                 <a href="#" class="text-black link-underline-info">
                                     <h4>
-                                        <?= $product->name ?>
+                                        <?= $product->getName() ?>
                                     </h4>
                                 </a>
                                 <a href="#">
